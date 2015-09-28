@@ -152,3 +152,5 @@ if move == sp:
         print spb + draw + spc + dw + sp + "."
     else:
         print err
+
+raw_input('\nPress Enter to exit.')
