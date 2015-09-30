@@ -87,7 +87,7 @@ def Program():
         print("Move and rotate your cursor by pressing W, A, S or D.")
         print("Change your trail color to black, blue, red or green by pressing Z, B, R or G respectively.")
         print("Press L for a surprise!\n")
-        print("You can exit by pressing X.\n")
+        print("You can exit by pressing X.\n\n")
     elif (x == int(ord("x")) or x == int(ord("X"))):
         exit()
 
