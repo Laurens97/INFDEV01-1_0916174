@@ -1,4 +1,4 @@
-import os
+﻿import os
 
     #defining clearing screen for Win, Linux & MacOSX
 def cls():
@@ -14,6 +14,8 @@ cls()
 
     #defining txt as list of firsttxt
 txt=list(firsttxt)
+print txt
+
 
     #defining x
 x=len(txt)
@@ -38,13 +40,15 @@ print chr(int(ord(txt[y]))+int(n))+"\n"
 """
 #--------TESTING--------#
 
-while not x==0:
+while not x==0: 
     y=x*(-1)
     txtordint = int(ord(txt[y]))
-    n=int(num)
+    n=int(num)%26
     if (txtordint >= 65 and txtordint <= 90) or (txtordint >= 97 and txtordint <= 122):
         if ((txtordint+n) > 90 and txtordint >= 65 and txtordint <= 90) or (txtordint >= 97 and txtordint <= 122 and (txtordint+n) > 122):
             n-=26
+        elif ((txtordint+n) < 65 and txtordint >= 65 and txtordint <= 90) or (txtordint >= 97 and txtordint <= 122 and (txtordint+n) < 97):
+            n+=26
         txt[y] = chr((txtordint)+n)
     x-=1
 
